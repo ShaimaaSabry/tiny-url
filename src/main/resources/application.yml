@@ -1,0 +1,19 @@
+spring:
+  profiles:
+    active: "local"
+
+---
+
+spring:
+  profiles: local
+amazon:
+  dynamodb:
+    endpoint: http://localhost:8000
+
+---
+
+spring:
+  profiles: prod
+amazon:
+  dynamodb:
+    endpoint: https://dynamodb.us-east-1.amazonaws.com
